@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oasis Verde</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav class="navbar">
+            <div class="logo"><a href="#">Oasis Verde</a></div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#plants">Plantas <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#indoor">Interior</a>
+                        <a href="#outdoor">Exterior</a>
+                        <a href="#succulents">Suculentas</a>
+                        <a href="#aromatic">Aromáticas</a>
+                    </div>
+                </li>
+                <li><a href="#care">Cuidado</a></li>
+                <li><a href="#shop">Tienda</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Tu Rincón Verde Personal</h1>
+                <p>Descubre la belleza de la naturaleza y transforma tu hogar con nuestras plantas seleccionadas.</p>
+                <a href="#shop" class="btn">Explorar Plantas</a>
+            </div>
+        </section>
+
+        <section id="shop" class="collections-section">
+            <h2>Nuestras Colecciones</h2>
+            <div class="plant-grid">
+                <!-- Plant Card 1 -->
+                <div class="plant-card fade-in-scroll">
+                    <img src="https://source.unsplash.com/random/400x300/?plant-monstera" alt="Monstera Deliciosa">
+                    <h3>Monstera Deliciosa</h3>
+                    <p>Ideal para interiores, fácil cuidado.</p>
+                    <span class="price">€29.99</span>
+                    <button class="add-to-cart-btn">Añadir al Carrito</button>
+                </div>
+                <!-- Plant Card 2 -->
+                <div class="plant-card fade-in-scroll">
+                    <img src="https://source.unsplash.com/random/400x300/?plant-succulent" alt="Colección de Suculentas">
+                    <h3>Colección de Suculentas</h3>
+                    <p>Pequeñas y resistentes, perfectas para escritorio.</p>
+                    <span class="price">€19.99</span>
+                    <button class="add-to-cart-btn">Añadir al Carrito</button>
+                </div>
+                <!-- Plant Card 3 -->
+                <div class="plant-card fade-in-scroll">
+                    <img src="https://source.unsplash.com/random/400x300/?plant-lavender" alt="Lavanda">
+                    <h3>Lavanda Aromática</h3>
+                    <p>Fragancia relajante y hermosas flores púrpuras.</p>
+                    <span class="price">€14.99</span>
+                    <button class="add-to-cart-btn">Añadir al Carrito</button>
+                </div>
+                <!-- Plant Card 4 -->
+                <div class="plant-card fade-in-scroll">
+                    <img src="https://source.unsplash.com/random/400x300/?plant-fern" alt="Helecho de Boston">
+                    <h3>Helecho de Boston</h3>
+                    <p>Purifica el aire y añade un toque tropical.</p>
+                    <span class="price">€24.99</span>
+                    <button class="add-to-cart-btn">Añadir al Carrito</button>
+                </div>
+                 <!-- Puedes añadir más tarjetas aquí -->
+            </div>
+        </section>
+
+        <section id="care" class="care-section">
+            <h2>Guía de Cuidado de Plantas</h2>
+            <div class="care-grid">
+                <div class="care-item">
+                    <i class="fas fa-sun"></i>
+                    <h3>Luz</h3>
+                    <p>Aprende sobre las necesidades de luz para cada planta.</p>
+                </div>
+                <div class="care-item">
+                    <i class="fas fa-tint"></i>
+                    <h3>Riego</h3>
+                    <p>Consejos para regar correctamente y evitar excesos.</p>
+                </div>
+                <div class="care-item">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Sustrato</h3>
+                    <p>La importancia de una buena tierra para el crecimiento.</p>
+                </div>
+                <div class="care-item">
+                    <i class="fas fa-cut"></i>
+                    <h3>Poda</h3>
+                    <p>Cómo podar para mantener tus plantas sanas y bellas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="blog-section">
+            <h2>Últimos del Blog</h2>
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <img src="https://source.unsplash.com/random/600x400/?plant-care-tips" alt="Trucos de Cuidado">
+                    <h3>5 Trucos Esenciales para Principiantes</h3>
+                    <p>Comienza tu viaje verde con estos consejos básicos...</p>
+                    <a href="#" class="read-more">Leer Más</a>
+                </article>
+                <article class="blog-post">
+                    <img src="https://source.unsplash.com/random/600x400/?plant-decor" alt="Decoración con Plantas">
+                    <h3>Decora tu Hogar con Plantas de Interior</h3>
+                    <p>Transforma tus espacios con estas ideas creativas...</p>
+                    <a href="#" class="read-more">Leer Más</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Oasis Verde</h3>
+                <p>Tu destino para encontrar las plantas perfectas y los consejos de cuidado expertos.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Boletín</h3>
+                <p>Suscríbete para recibir ofertas y consejos exclusivos.</p>
+                <form action="#">
+                    <input type="email" placeholder="Tu Email">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Oasis Verde. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
